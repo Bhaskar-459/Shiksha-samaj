@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EEDD;
+
+}
+
+.left-container{
+    padding: 10px;
+    background-color: #ACE2E1;
+    border-right: 1px solid #e6e6e6;
+}
+.right-container{
+    padding: 10px;
+    border-color: aqua;
+    background-color: #ACE2E1;
+}
+.batch-section{
+    padding: 10px;
+    background-color: #ACE2E1;
+    border-right: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}
+.achievements-section{
+    padding: 10px;
+    background-color: #ACE2E1;
+    border-right: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}
+.button{
+    padding: 10px;
+    background-color: #008DDA;
+    border-right: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}
+.button:hover{
+    background-color: rgba(56, 56, 231,0.7);
+}
+.videos{
+    padding: 5px;
+    background-color: #ACE2E1;
+    border-right: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}
+.video-bord{
+    padding: 10px;
+    background-color: #41C9E2;
+    border: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}
+.hackathons{
+    padding: 10px;
+    background-color: #ACE2E1;
+    border-right: 1px solid #e6e6e6;
+    flex-wrap: wrap;
+}

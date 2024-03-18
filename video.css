@@ -62,6 +62,12 @@ body{
     margin:2px 5px;
     padding: 10px;
 }
+.channel-title button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
+    cursor:pointer;
+}
 .channel-buttons{
     display: flex;
     width: 50%;
@@ -76,6 +82,12 @@ body{
     background-color:#41C9E2;
     margin:2px 5px;
     padding: 10px;
+}
+.channel-buttons button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
+    cursor:pointer;
 }
 .player{
 

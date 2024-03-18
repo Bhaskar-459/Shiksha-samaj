@@ -32,6 +32,120 @@ body{
     margin:15px 15px 15px 30px;
     /* background-color: #ACE2E1; */
 }
+
+.ui-data {
+    margin-top: 5px;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width:auto;
+    height:initial;
+
+}
+.channel{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.channel-title{
+    font-size: large;
+    align-items: center;
+    display: flex;
+    min-width:fit-content;
+    width:50%;
+}
+.channel-title button{
+    flex-grow:1;
+    border-radius: 40px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#41C9E2;
+    margin:2px 5px;
+    padding: 10px;
+}
+.channel-title button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
+    cursor:pointer;
+}
+.channel-buttons{
+    display: flex;
+    width: 50%;
+    min-width: fit-content;
+    align-items: center;
+
+}
+.channel-buttons button{
+    flex-grow:1;
+    border-radius: 40px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#41C9E2;
+    margin:2px 5px;
+    padding: 10px;
+}
+.channel-buttons button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
+    cursor:pointer;
+}
+.player{
+
+    border-radius: 20px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#ACE2E1;
+    box-shadow: 0 0 10px rgb(0,0,0,.2);
+    height:543px;
+}
+.player video{
+    width:inherit;
+    height:inherit;
+    border-radius: 20px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#ACE2E1;
+    box-shadow: 0 0 10px rgb(0,0,0,.2);
+}
+.ui-data>.title{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height:70%;
+    border-radius: 10px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:transparent;
+    backdrop-filter: saturate;
+    box-shadow: 0 0 10px rgb(0,0,0,.2); 
+
+}
+.ctrl-buttons
+{   
+    border-radius: 10px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#008DDA;
+    /* background-color:transparent; */
+    backdrop-filter: saturate;
+    box-shadow: 0 0 10px rgb(0,0,0,.2); 
+    display:flex;
+    height:30%;
+    width:auto;
+    margin-top: 3px;
+}
+.ctrl-buttons button{
+    flex-grow:1;
+    border-radius: 40px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#41C9E2;
+    margin:2px 5px;
+}
+.ctrl-buttons button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
+    cursor:pointer;
+}
+.ctrl-buttons span{
+    font-size:large;
+}
 .container-right
 {
     background-color: #ACE2E1;
@@ -108,11 +222,19 @@ body{
     right:0;
     width: 100%;
     height: 100%;
-    padding: 5px;
-    background-color:brown;
+    color:black;
+    padding: 15px;
+
     display:flex;
     flex-direction: column;
     border-radius: 20px;
+    overflow-y: scroll;
+}
+.container-right .description .timelines{
+    white-space: pre-wrap;
+}
+.container-right .description::-webkit-scrollbar{
+    display: none;
 }
 .container-right .description.hidden{
     display:none;
@@ -235,65 +357,23 @@ body{
     display:none;
 }
 .container-right .scrollable-item{
-    min-height:130px;
+    min-height:fit-content;
     width:auto;
     background-color: transparent;
     border:2px solid rgb(0,0,0,.2);
     box-shadow: 0 0 10px rgb(0,0,0,.2);
     border-radius: 5px;
+    padding: 10px;
 
 }
-.player{
-
-    border-radius: 20px;
-    border:2px solid rgb(255,255,255,.2);
-    background-color:#ACE2E1;
-    box-shadow: 0 0 10px rgb(0,0,0,.2);
-    height:543px;
-}
-.ui-data {
-    margin-top: 5px;
-    flex-grow: 1;
-    width:auto;
-    height:initial;
+.container-right .scrollable-item ol {
+    
+    padding-left: 40px;
 
 }
-.ui-data>.title{
-    width:auto;
-    height:70%;
-    border-radius: 10px;
-    border:2px solid rgb(255,255,255,.2);
-    background-color:transparent;
-    backdrop-filter: saturate;
-    box-shadow: 0 0 10px rgb(0,0,0,.2); 
 
-}
-.ctrl-buttons
-{   
-    border-radius: 10px;
-    border:2px solid rgb(255,255,255,.2);
-    background-color:#008DDA;
-    /* background-color:transparent; */
-    backdrop-filter: saturate;
-    box-shadow: 0 0 10px rgb(0,0,0,.2); 
-    display:flex;
-    height:30%;
-    width:auto;
-    margin-top: 3px;
-}
-.ctrl-buttons button{
-    flex-grow:1;
-    border-radius: 40px;
-    border:2px solid rgb(255,255,255,.2);
-    background-color:#41C9E2;
-    margin:2px 5px;
-}
-.ctrl-buttons button:hover{
-    border:none;
-    background-color: #ACE2E1;
-    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
-    cursor:pointer;
-}
-.ctrl-buttons span{
-    font-size:large;
+.container-right .scrollable-item ul {
+    
+    padding-left: 40px;
+
 }

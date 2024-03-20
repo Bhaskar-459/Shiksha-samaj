@@ -15,9 +15,34 @@ body{
     max-height: 100vh;
 }
 .navbar{
+    display: flex;
+    position: sticky;
+    top:0;
+    padding: 5px 40px;
+    border-bottom: 1px solid rgb(255,255,255,.2);
+    box-shadow: 0 0 10px 2px rgb(65, 201, 226,.2);
+    justify-content:flex-start;
     width:inherit;
     height:5vh;
     background-color:#ACE2E1;
+}
+.navbar .maintitle{
+    align-items: center;
+    border: 1px solid rgb(255,255,255,.2);
+    box-shadow: 0 0 10px 2px rgb(65, 201, 226,.5);
+    padding:5px;
+    border-radius: 5px;
+}
+.navbar .maintitle:hover{
+    background-color: #008DDA;
+    color: white;
+    cursor: pointer;
+    
+}
+.navbar .maintitle h1{
+    font-size: 25px;
+
+
 }
 .content{
     display: flex;
@@ -313,6 +338,35 @@ body{
     border-radius: 99em;
     height: 1px;
     width: auto;
+    cursor:pointer;
+  }
+  .container-right .quiz .scrollable-item li{
+    position:relative;
+  }
+  .container-right .quiz .scrollable-item li input{
+    position:absolute;
+    left: -40px;
+    top:0;
+    bottom:0;
+  }
+  .container-right .quiz .submit{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height:fit-content;
+
+  }
+  .container-right .quiz .submit button{
+    border-radius: 5px;
+    border:2px solid rgb(255,255,255,.2);
+    background-color:#41C9E2;
+    margin:2px 5px;
+    padding: 10px 20px;
+  }
+  .container-right .quiz .submit button:hover{
+    border:none;
+    background-color: #ACE2E1;
+    box-shadow: 0 0 10px 2px rgb(0,0,0,.2); 
     cursor:pointer;
   }
 .container-right .resources{

@@ -39,6 +39,12 @@ body{
     cursor: pointer;
     
 }
+.navbar .maintitle a:hover{
+    background-color: #008DDA;
+    color: white;
+    cursor: pointer;
+    
+}
 .navbar .maintitle h1{
     font-size: 25px;
 

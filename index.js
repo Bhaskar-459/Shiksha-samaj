@@ -5,16 +5,11 @@ app.use(express.urlencoded({ extended: true }));
 const port = 3000;
 file = __dirname
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname+'/index.html'));
+  res.sendFile(path.join(__dirname+'/login.html'));
 });
 
 app.post('/user', (req, res)=>{
-    if(req.body.user=="student"){
-    res.sendFile(path.join(__dirname+'/studenthome.html'))
-    }
-    else{
-        res.send(path.join(__dirname+'/teacherhome.html'))
-    }
+    res.sendFile(path.join(__dirname+'/home.html'))
 });
 
 

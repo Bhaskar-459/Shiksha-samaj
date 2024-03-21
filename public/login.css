@@ -20,9 +20,29 @@ body{
     background-size:cover ;
     background-position:center ;
     min-height: 100vh;
+    position:relative;
 
 }
-
+.teacherstudent
+{
+    position:absolute;
+    top:0;
+    right:0;
+    background:transparent;
+    backdrop-filter: blur(20px) ;
+    margin:10px 10px;
+    border:2px solid rgb(255,255,255,.2);
+    width:fit-content;
+    color:white;
+    border-radius: 20px;
+    padding:5px 5px;
+    box-shadow: 0 0 10px rgb(0,0,0,.2);
+}
+.teacherstudent a
+{
+    text-decoration:none;
+    color:white;
+}
 .container{
     background:transparent;
     backdrop-filter: blur(20px) ;

@@ -5,13 +5,19 @@ body{
     background-color: #F7EEDD;
 
 }
+.main{
+    width:100vw;
+    background-color: #ACE2E1;
+}
 
 .left-container{
     padding: 10px;
     background-color: #ACE2E1;
     border-right: 1px solid #e6e6e6;
+    width:20vw;
 }
 .right-container{
+    width:40vw;
     padding: 10px;
     border-color: aqua;
     background-color: #ACE2E1;

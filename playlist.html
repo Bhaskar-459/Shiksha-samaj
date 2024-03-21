@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        .header {
+            position: relative;
+            width: 100%;
+            height:40px;
+            margin-top: 2;
+        }
+        body{
+            background-color: #F7EEDD;
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+        }
+        .create-button {
+            position: absolute;
+            top:5vh;
+            left: 7vw;
+            width:10vw;
+            height:10vh;
+            font-size: 35px;
+            border-radius: 20px;
+            background-color: #008DDA;
+            padding-left: 4vw;
+            padding-top: 3vh;
+            text-decoration: none;
+            color:black
+        }
+        
+        .left {
+            float: left;
+            width: 10%;
+            margin-top: 15vh;
+            margin-left: 2vw;
+            display:flex;
+            flex-direction: column;
+            gap:150px;
+        }
+        
+        
+        .right {
+            width: 70vw;
+            height:80vh;
+            margin-top:10vh;
+            margin-left: 15vw;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5vw;
+        }
+        
+        .circle-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #41C9E2;
+        }
+
+        .right-1{
+            display: flex;
+            width: 62vw;
+            height: 40vh;
+            gap: 10vw;
+            margin-bottom: 10vh;
+        }
+        .right-2{
+            gap: 10vw;
+            top:70vh;
+            display: flex;
+        }
+        .division1 {
+            width: 25vw;
+            height: 33vh;
+            margin-top: 3vh;
+            border:2px solid black;
+            border-radius:25px ;
+            background-color: #41C9E2;
+        }
+
+        .division1 h1{
+            padding-left: 1vw;
+        }
+        .division2 h1{
+            padding-left: 1vw;
+        }
+        .division2 {
+            width: 25vw;
+            height:33vh;
+            border:2px solid black;
+            border-radius:25px ;
+            background-color: #41C9E2;
+        }
+        .div1_image{
+            position: absolute;
+            top: 30vh;
+            padding-left: 13vw;           
+        }
+        .div2_image{
+            position: absolute;
+            top: 30vh;
+            padding-left: 13vw;           
+        }
+        .div3_image{
+            position: absolute;
+            top: 75vh;
+            padding-left: 13vw;           
+        }
+        .div4_image{
+            position: absolute;
+            top: 75vh;
+            padding-left: 13vw;           
+        }
+        .circle-button, .circle-button::after{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="create-button">Create</a>
+    </header>
+    <div class="left">
+        <a href="#" class="circle-button">Subs</a>
+        <a href="#" class="circle-button">Shorts</a>
+        <a href="#" class="circle-button">Profile</a>
+    </div>
+    <div class="right">
+        <div class="right-1">
+            <div class="division1">
+                <h1>My Playlist 1</h1>
+                <ul>
+                    <li><p>video1,video2,...</p></li>
+                    <li><p>ADD</p></li>
+                    <li><p>DELETE</p></li>
+                </ul>
+                <div class="div1_image">
+                    <img src="./90per-removebg.png" alt="Your Analytics" width="130" heigt="90">
+                </div>
+                
+            </div>
+            <div class="division1">
+                <h1>My Playlist 2</h1>
+                <ul>
+                    <li><p>video1,video2,...</p></li>
+                    <li><p>ADD</p></li>
+                    <li><p>DELETE</p></li>
+                </ul>
+                <div class="div2_image">
+                    <img src="./50per-removebg.png" alt="Your Analytics" width="130" heigt="90">
+                </div>
+            </div>
+        </div>
+        <div class="right-2">
+            <div class="division2">
+                <h1>My Playlist 3</h1>
+                <ul>
+                    <li><p>video1,video2,...</p></li>
+                    <li><p>ADD</p></li>
+                    <li><p>DELETE</p></li>
+                </ul>
+                <div class="div3_image">
+                    <img src="./30per-removebg.png" alt="Your Analytics" width="130" heigt="90">
+                </div>
+            </div>
+            <div class="division2">
+                <h1>My Playlist 4</h1>
+                <ul>
+                    <li><p>video1,video2,...</p></li>
+                    <li><p>ADD</p></li>
+                    <li><p>DELETE</p></li>
+                </ul>
+                <div class="div4_image">
+                    <img src="./75per-removebg.png" alt="Your Analytics" width="130" heigt="90">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
